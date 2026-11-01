@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<launch>
+    <node pkg="nodelet" type="nodelet" args="manager" name="dasun" output="screen"         />
+    <node pkg="nodelet" type="nodelet" args="load nodelet_demo/MyPlus  dasun" name="xiaowang" output="screen" >
+        <param name="value" value="100"/>
+    </node>
+    
+    <node pkg="nodelet" type="nodelet" args="load nodelet_demo/MyPlus dasun" name="ergou" output="screen" >
+        <param name="value" value="-50"/>
+        <remap from="/ergou/in" to="/xiaowang/out"/>
+    </node>
+
+</launch>

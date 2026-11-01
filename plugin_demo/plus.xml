@@ -1,0 +1,12 @@
+<library path="lib/libplus">
+    <class type="polygon_plugins_ns::Triangle" base_class_type="polygon_base_ns::Regular_Polygon"  >
+        <description>This is Triangle plugin</description>
+    </class>
+    <class type="polygon_plugins_ns::Square" base_class_type="polygon_base_ns::Regular_Polygon"  >
+        <description>This is Square plugin</description>
+    </class>
+
+
+
+
+</library>
